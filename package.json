@@ -1,7 +1,7 @@
 {
   "name": "app_co",
   "version": "0.1.0",
-  "homepage": "http://zarg129.github.io/Bitmedia",
+  "homepage": "http://zarg129.github.io/BitmediaLabs",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
