@@ -1,0 +1,103 @@
+.stats {
+  &__top {
+    height: 72px;
+    width: 100%;
+    background-color: #3A80BA;
+  }
+
+  &__logo {
+    position: relative;
+    padding: 10px 130px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+
+    color: white;
+  }
+
+  &__tabs {
+    padding: 0 130px;
+  }
+
+  &__list {
+    margin: 16px 0 24px;
+    list-style: none;
+    display: flex;
+  }
+ 
+  &__link {
+    margin: 0 8px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#CCCCCC;
+
+    &-active {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #3A80BA;
+    }
+
+    &::after {
+      content: url('../components/assets/Line\ 8.svg');
+      margin-left: 8px;
+    }
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    padding: 0 130px;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  &__table {
+    border-spacing: 0;
+    padding: 0 130px;
+    overflow-x: scroll;
+  }
+
+  &__pagination {
+    position: relative;
+    padding: 0 25%;
+    width: 500px;
+  }
+
+  &__footer{ 
+    background-color: #1C3B55; 
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .stats {
+    &__table {
+      padding: 0 25px;
+      overflow-x: scroll;
+    }
+
+    &__logo {
+      padding: 0 25px;
+    }
+
+    &__tabs {
+      padding: 0 25px;
+    }
+
+    &__title {
+      padding: 0 25px;
+    }
+
+    &__pagination {
+      padding: 0 50%;
+      overflow-x: scroll;
+      justify-content: center safe;
+    }
+  }
+}

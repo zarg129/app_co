@@ -1,0 +1,100 @@
+.pagination {
+  display: flex;
+  justify-content: center safe;
+  margin: 25px 0 25px 0;
+  overflow-y: scroll;
+  
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid #F1F1F1;
+    border-radius: 5px;
+    padding: 14px 16px;
+    margin: 0 6px;
+
+    &-active {
+      background-color:  #3A80BA;
+      width: 20px;
+      height: 20px;
+      
+      border: 1px solid #F1F1F1;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 0 6px;
+    }
+  }
+
+  &__link {
+    color: black;
+    width: 20px;
+    height: 20px;
+
+    &-active {
+      color: white;
+    }
+  }
+
+  &__button {
+    background-color: white;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &::before {
+      position: relative;
+      right: 5px;
+      top: -5px;
+      content: '';
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #3A80BA;
+      transform: rotate(135deg);
+    }
+
+    &::after {
+      position: relative;
+      right: 5px;
+      top: 8px;
+      content: '';
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #3A80BA;
+      transform: rotate(-135deg);
+    }
+
+    &-r {
+      &::before {
+        position: relative;
+        right: 5px;
+        top: -5px;
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: #3A80BA;
+        transform: rotate(-135deg);
+      }
+  
+      &::after {
+        position: relative;
+        right: 5px;
+        top: 8px;
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: #3A80BA;
+        transform: rotate(135deg);
+      }
+    }
+  }
+}

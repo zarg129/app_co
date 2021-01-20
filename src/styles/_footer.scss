@@ -1,0 +1,137 @@
+.footer {
+  &__container {
+    height: 185px;
+    background-image: url(../components/assets/Rectangle54.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__input {
+    position: relative;
+    text-align: center;
+    margin: 0, auto;
+    margin-bottom: 20px;
+
+    &-text {
+      padding: 0 19px;
+      width: calc(100% / 3);
+      position: relative;
+      right: -90px;
+      height: 64px;
+      border-radius: 10px;
+      outline: none;
+      border: solid 1px gray;
+      box-shadow: none;
+
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    &-button {
+      width: 180px;
+      height: 56px;
+      position: relative;
+      top: 0px;
+      right: 101px;
+      background-color: #3A80BA;
+      border-style: none;
+      border-radius: 8px;
+      color: white;
+
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      
+      text-align: center;
+      transition: 0.4s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 130px;
+  }
+
+  &__logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: white;
+  }
+
+  &__rights {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    color: white;
+  }
+}
+
+@media(max-width: 768px) {
+  .footer {
+    &__container {
+      background-size: 100% 100%;
+    }
+
+    &__info{
+      padding: 14px 25px;
+    }
+
+    &__input {
+      margin-top: 30px;
+
+      &-text {
+        width: 63%;
+      }
+
+      &-button {
+        right: 95px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    &__rights {
+      display: none;
+    }
+
+    &__info {
+      text-align: center;
+      justify-content: center;
+      padding-bottom: 0;
+    }
+
+    &__input {
+      padding: 0;
+      margin: 10px 10px 70px 10px;
+
+      &-text {
+        width: 70%;
+        height: 70%;
+        right: 0;
+      }
+
+      &-button {
+        width: 30%;
+        height: 50%;
+        right: -105px;
+        top: -22px;
+      }
+    }
+  }
+}
